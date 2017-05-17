@@ -24,4 +24,9 @@ public class LuhnTestTest {
     public void all_zero_except_three_digits_in_the_last_positions() {
         assertTrue(LunhTest.isValid("00000000216"));
     }
+
+    @Test
+    public void all_zero_except_two_digits_in_even_positions() {
+        assertTrue(LunhTest.isValid("00000002030"));
+    }
 }
