@@ -14,4 +14,9 @@ public class LuhnTestTest {
     public void all_zero_except_one_digit() {
         assertFalse(LunhTest.isValid("00000000001"));
     }
+
+    @Test
+    public void all_zero_except_two_digits_in_odd_positions() {
+        assertTrue(LunhTest.isValid("00000000505"));
+    }
 }
