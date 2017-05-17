@@ -1,15 +1,12 @@
 
 public class LunhTest {
-
-
-    public static boolean isValid(int digits) {
-
-        boolean res = false;
-
-        if (digits == 0) {
-            res = true;
+    
+    public static boolean isValid(String digits) {
+        if (digits == "00000000000") {
+            return true;
         }
 
-        return res;
+        return false;
     }
+
 }
