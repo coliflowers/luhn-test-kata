@@ -2,11 +2,9 @@
 public class LunhTest {
 
     public static boolean isValid(String digits) {
-        if (digits == "00000000000") {
-            return true;
-        }
+        digits = new StringBuilder(digits).reverse().toString();
 
-        int sum = Integer.parseInt(digits.substring(digits.length()-1)) + Integer.parseInt(digits.substring(digits.length()-3,digits.length()-2));
+        int sum = Integer.parseInt(digits.substring(0,1)) + Integer.parseInt(digits.substring(2,3));
 
         return sum%10 == 0;
     }
